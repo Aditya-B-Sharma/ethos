@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>E-Thos Business Prospect Calculator</h1>
+<p>I am looking to start a business in...</p>
+<form action="{{ url_for('handle_data') }}" method="post">
+    <input type="text" name="businessType" size="40" placeholder="Food">
+    <br>
+    <p>The location I'm thinking about is...</p>
+    <input type="text" name="locationType" size="40" placeholder="Moore Street, ACT">
+    <input type="submit" style="position: absolute; left: -9999px"/>
+
+</form>
+
+
+</body>
+</html>
