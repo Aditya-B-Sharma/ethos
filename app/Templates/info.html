@@ -2,17 +2,22 @@
 <html>
     <head>
         <script>
-            var businessVar = {{ businessVar }}
-            var locationVar = {{ locationVar }}
+            var businessVar = '{{ businessVar }}';
+            var locationVar = '{{ locationVar }}';
         </script>
     </head>
 <body>
 
-
 <form method='post'>
-    businessVar: {{ businessVar }}
-    locationVar: {{ locationVar }}
+    
 </form>
+
+<iframe id="map"
+        width="600"
+        height="450"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDB_EO4pqHxG4PD0r22c3R3voKF3K96fPU&q={{ businessVar }}+businesses+in+{{ locationVar }}&zoom=14"
+</iframe>
 
 </body>
 </html>

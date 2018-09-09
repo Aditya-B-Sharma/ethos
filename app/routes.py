@@ -19,8 +19,8 @@ def handle_data():
     return render_template(
         'info.html',
         title = "E-thos Info",
-        businessVar = businessType,
-        locationVar = locationType,
+        businessVar = str(businessType),
+        locationVar = str(locationType),
         year = datetime.now().year,
     )
 
